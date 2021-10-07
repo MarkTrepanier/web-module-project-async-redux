@@ -19,16 +19,16 @@ const initialState = {
 
 export const reducer = (state = initialState, action)=> {
     switch(action.type){
-        // case 'FETCH_START':
-        //     return{
-        //         ...state,
-        //         isFetching: true
-        //     }
-        // case 'FETCH_SUCCESS':
-        //     return{
-        //         ...state,
-        //         beers: action.payload
-        //     }
+        case 'FETCH_START':
+            return{
+                ...state,
+                isFetching: true
+            }
+        case 'FETCH_SUCCESS':
+            return{
+                ...state,
+                beers: action.payload
+            }
         default:
             return state
     }
