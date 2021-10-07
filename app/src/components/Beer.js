@@ -20,6 +20,9 @@ const CardStyle = Styled.div`
         }
     }
     p{
+        border: dotted gold 2px;
+        border-radius: 10px;
+        padding: 5px;
         width:30%;
     }
 `
